@@ -1,0 +1,26 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./utils/variables.scss";
+
+@import "./blocks/head.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 50px;
+
+    @media (max-width: 768px) {
+        padding: 0 25px;
+
+    }
+}

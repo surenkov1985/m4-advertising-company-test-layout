@@ -1,0 +1,102 @@
+.head {
+
+
+
+    &__contacts {
+        background: $ButtonColor;
+
+        & .container {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        &-btn {
+            color: #FFFFFF;
+            font-size: 12px;
+
+            &:hover {
+                color: #FFFFFF;
+                opacity: 0.8;
+                border-color: none;
+            }
+        }
+
+        & .dropdown-menu {
+            background: $ButtonColor;
+
+        }
+
+        & .dropdown-item {
+            color: #FFFFFF;
+
+            &:hover {
+                color: #FFFFFF;
+                background-color: darken($ButtonColor, 2%);
+            }
+        }
+
+        &-list {
+            column-gap: 22px;
+        }
+
+        &-link {
+            color: #FFFFFF;
+
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__social {
+
+        &-list {
+            column-gap: 22px;
+        }
+    }
+
+    &__menu {
+        background: #0C0C0C;
+    }
+
+    &__navigation {
+
+        &-logo {
+
+            @media (max-width: 768px) {
+                width: 110px;
+            }
+        }
+
+        &-list {
+            column-gap: 12px;
+            row-gap: 45px;
+
+            @media (max-width: 768px) {
+                padding: 85px 0;
+                background: #323232;
+            }
+        }
+
+        &-item {
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 2px solid $ButtonColor;
+
+                & a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        &-link {
+            color: $ButtonColor;
+            font-size: 0.875rem;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
