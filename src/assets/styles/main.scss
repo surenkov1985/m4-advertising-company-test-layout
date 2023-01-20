@@ -5,13 +5,29 @@
 @import "./blocks/head.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/about.scss";
+@import "./blocks/services.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/advertion-production.scss";
+@import "./blocks/printing.scss";
+@import "./blocks/polygraphy.scss";
+
+@import "./layouts/services/content-menu.scss";
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 body {
     min-width: 375px;
+    position: relative;
+    height: 100%;
+
 }
 
 ul,
@@ -26,7 +42,13 @@ ol {
     padding: 0 50px;
 
     @media (max-width: 768px) {
-        padding: 0 25px;
+        padding: 0 14px;
 
     }
+}
+
+.nav-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
 }

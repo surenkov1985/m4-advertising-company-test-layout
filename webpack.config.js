@@ -19,7 +19,27 @@ const build = {
 		}),
 		new HtmlWebpackPlugin({
 			filename: "index.html",
-			template: "./index.html",
+			template: "index.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services.html",
+			template: "services.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "portfolio.html",
+			template: "portfolio.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "contacts.html",
+			template: "contacts.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "info.html",
+			template: "info.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "vacancies.html",
+			template: "vacancies.html",
 		}),
 		new CopyPlugin({
 			patterns: [{ from: "static", to: "", noErrorOnMissing: true }],
