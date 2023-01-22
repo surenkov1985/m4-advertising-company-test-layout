@@ -1,6 +1,7 @@
 import * as bootstrap from "bootstrap";
 import $ from "jquery";
-import { tns } from "tiny-slider";
+
+import Swiper from "swiper/bundle";
 
 // styles
 
@@ -26,26 +27,28 @@ $(".link").each((_, link) => {
 	}
 });
 
-// let slider = tns({
-// 	container: ".my-slider",
-// 	items: 1,
-// 	loop: true,
-// 	autoplay: true,
-// 	mouseDrag: true,
-// 	responsive: {
-// 		640: {
-// 			edgePadding: 1,
-// 			gutter: 20,
-// 			items: 2,
-// 		},
-// 		700: {
-// 			gutter: 30,
-// 			items: 3,
-// 		},
-// 		900: {
-// 			items: 5,
-// 		},
-// 	},
-// });
-
-// slider.play();
+const swiper = new Swiper(".mySwiper", {
+	direction: "horizontal",
+	loop: true,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+		},
+		550: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 4,
+		},
+		991: {
+			slidesPerView: 4,
+		},
+		1200: {
+			slidesPerView: 5,
+		},
+	},
+});

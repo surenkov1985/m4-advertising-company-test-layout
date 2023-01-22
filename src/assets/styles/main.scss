@@ -14,6 +14,8 @@
 
 @import "./layouts/services/content-menu.scss";
 
+@import '../../../node_modules/swiper/swiper.scss';
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,4 +53,33 @@ ol {
     position: absolute;
     top: 100%;
     left: 0;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 640px;
+
+    @media (max-width: 1200px) {
+        max-width: 520px;
+
+    }
+
+    @media (max-width: 768px) {
+        max-width: 420px;
+
+    }
+
+    @media (max-width: 550px) {
+        max-width: 380px;
+
+    }
+
+    @media (max-width: 400px) {
+        max-width: 260px;
+
+    }
+
+    &-slide {
+        width: 120px;
+    }
 }
