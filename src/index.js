@@ -22,7 +22,9 @@ $(".questions__form").on("submit", function (e) {
 $(".link").each((_, link) => {
 	$(link).removeClass("active");
 
-	if (location.pathname === $(link)[0].pathname) {
+	console.log($(link), location.pathname.split("/")[1] === $(link)[0].pathname.split("/")[1]);
+
+	if (location.pathname.split("/")[1] === $(link)[0].pathname.split("/")[1]) {
 		$(link).addClass("active");
 	}
 });

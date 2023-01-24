@@ -7,11 +7,12 @@
     }
 
     &__list {
-        padding: 0 6px;
+        // padding: 0 6px;
+        margin: 0;
         row-gap: 20px;
 
         @media (max-width: 768px) {
-            padding: 0 11px;
+            // padding: 0 11px;
             row-gap: 8px;
         }
 

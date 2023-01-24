@@ -12,6 +12,7 @@
 @import "./blocks/printing.scss";
 @import "./blocks/polygraphy.scss";
 @import "./blocks/widescreen-title.scss";
+@import "./blocks/signboards.scss";
 
 @import "./layouts/services/content-menu.scss";
 
@@ -57,31 +58,7 @@ ol {
     left: 0;
 }
 
-// .swiper {
-//     width: 100%;
-//     max-width: 640px;
-
-//     @media (max-width: 1200px) {
-//         max-width: 520px;
-
-//     }
-
-//     @media (max-width: 768px) {
-//         max-width: 420px;
-
-//     }
-
-//     @media (max-width: 550px) {
-//         max-width: 380px;
-
-//     }
-
-//     @media (max-width: 400px) {
-//         max-width: 260px;
-
-//     }
-
-//     &-slide {
-//         width: 120px;
-//     }
+// .row {
+//     margin: 0;
+//     padding: 0;
 // }

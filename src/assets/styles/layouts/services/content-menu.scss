@@ -1,18 +1,18 @@
 .menu {
     background: #383838;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 150px;
     z-index: 10;
 
 
     @media (max-width: 991px) {
-        top: 102px;
+        top: 100px;
         background-color: $ButtonColor;
     }
 
     @media (max-width: 768px) {
-        top: 76px;
+        top: 74px;
     }
 
     & .container {

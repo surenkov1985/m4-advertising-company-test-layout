@@ -30,6 +30,14 @@ const build = {
 			template: "services/widescreen-printing.html",
 		}),
 		new HtmlWebpackPlugin({
+			filename: "services/interior-printing.html",
+			template: "services/interior-printing.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services/signboards.html",
+			template: "services/signboards.html",
+		}),
+		new HtmlWebpackPlugin({
 			filename: "portfolio.html",
 			template: "portfolio.html",
 		}),

@@ -2,6 +2,18 @@
     &__title {
         background: #282828;
 
+        &-icon svg {
+            width: 115px;
+
+            @media screen and (max-width: 768px) {
+                width: 82px;
+            }
+
+            // & svg {
+            //     width: 100%;
+            // }
+        }
+
         & .container {
             padding-top: 30px;
             padding-bottom: 30px;
@@ -54,10 +66,10 @@
 
     &__banners {
         & .container {
-            padding: 50px 56px;
+            padding: 50px 40px;
 
             @media (max-width: 768px) {
-                padding: 16px 14px;
+                padding: 16px 10px;
 
             }
         }
@@ -101,9 +113,19 @@
     }
 
     &__item {
+        padding: 0 10px;
+
+        @media (max-width: 768px) {
+            padding: 0 7px;
+        }
+
+        @media (max-width: 550px) {
+            padding: 0 4px;
+        }
 
         & .row {
-            padding: 0 10px !important;
+            margin: 0;
+
         }
 
         & .banner__image {
