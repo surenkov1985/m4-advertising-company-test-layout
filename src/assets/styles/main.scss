@@ -11,10 +11,12 @@
 @import "./blocks/advertion-production.scss";
 @import "./blocks/printing.scss";
 @import "./blocks/polygraphy.scss";
+@import "./blocks/widescreen-title.scss";
 
 @import "./layouts/services/content-menu.scss";
 
 @import '../../../node_modules/swiper/swiper.scss';
+@import "../../../node_modules/swiper/swiper-bundle.css";
 
 html {
     scroll-behavior: smooth;
@@ -55,31 +57,31 @@ ol {
     left: 0;
 }
 
-.swiper {
-    width: 100%;
-    max-width: 640px;
+// .swiper {
+//     width: 100%;
+//     max-width: 640px;
 
-    @media (max-width: 1200px) {
-        max-width: 520px;
+//     @media (max-width: 1200px) {
+//         max-width: 520px;
 
-    }
+//     }
 
-    @media (max-width: 768px) {
-        max-width: 420px;
+//     @media (max-width: 768px) {
+//         max-width: 420px;
 
-    }
+//     }
 
-    @media (max-width: 550px) {
-        max-width: 380px;
+//     @media (max-width: 550px) {
+//         max-width: 380px;
 
-    }
+//     }
 
-    @media (max-width: 400px) {
-        max-width: 260px;
+//     @media (max-width: 400px) {
+//         max-width: 260px;
 
-    }
+//     }
 
-    &-slide {
-        width: 120px;
-    }
-}
+//     &-slide {
+//         width: 120px;
+//     }
+// }

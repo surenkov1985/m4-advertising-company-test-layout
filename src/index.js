@@ -52,3 +52,30 @@ const swiper = new Swiper(".mySwiper", {
 		},
 	},
 });
+
+const servicesSwiper = new Swiper(".servicesSwiper", {
+	direction: "horizontal",
+	spaceBetween: 20,
+	navigation: {
+		prevEl: ".slider__button-prev",
+		nextEl: ".slider__button-next",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+			grid: {
+				rows: 2,
+			},
+			spaceBetween: 7,
+		},
+		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			grid: {
+				rows: 1,
+			},
+			spaceBetween: 20,
+		},
+	},
+});

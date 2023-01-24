@@ -22,8 +22,12 @@ const build = {
 			template: "index.html",
 		}),
 		new HtmlWebpackPlugin({
-			filename: "services.html",
-			template: "services.html",
+			filename: "services/index.html",
+			template: "services/index.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services/widescreen-printing.html",
+			template: "services/widescreen-printing.html",
 		}),
 		new HtmlWebpackPlugin({
 			filename: "portfolio.html",
