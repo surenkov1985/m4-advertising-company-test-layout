@@ -1,0 +1,126 @@
+.foot {
+    background: #151515;
+
+    & .container {
+        padding: 50px 50px 60px;
+
+        @media (max-width: 768px) {
+            padding: 40px 30px 50px;
+        }
+
+        @media (max-width: 550px) {
+            padding: 30px 15px 40px;
+        }
+    }
+
+
+    & .swiper {
+        width: 100%;
+        max-width: 640px;
+
+        @media (max-width: 1200px) {
+            max-width: 520px;
+
+        }
+
+        @media (max-width: 768px) {
+            max-width: 420px;
+
+        }
+
+        @media (max-width: 550px) {
+            max-width: 380px;
+
+        }
+
+        @media (max-width: 400px) {
+            max-width: 260px;
+
+        }
+
+        &-slide {
+            width: 120px;
+        }
+    }
+
+    &__navigation {
+
+        &-partners {
+
+            & .link {
+                display: block;
+                width: 100px;
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__social {
+
+        &-list {
+            column-gap: 22px;
+        }
+
+        &-link {
+            color: $ButtonColor;
+
+            &:hover {
+                color: $ButtonColor;
+            }
+
+            & svg path {
+                fill: $ButtonColor;
+            }
+        }
+    }
+
+    &__contacts {
+
+        &-btn {
+            color: #FFFFFF;
+            font-size: 12px;
+
+            @media (max-width: 768px) {
+                font-size: 1.125rem;
+            }
+
+            &:hover {
+                color: #FFFFFF;
+                opacity: 0.8;
+                border-color: none;
+            }
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 1.125rem;
+            color: #797979;
+        }
+
+        &-addr {
+            font-size: 0.75rem;
+        }
+
+        &-link {
+            font-size: 0.875rem;
+
+            @media (max-width: 768px) {
+                font-size: 0.93rem;
+            }
+        }
+    }
+
+    &__navigation {
+
+        &-logo {
+            width: 207px;
+
+            @media (max-width: 991px) {
+                width: 160px;
+            }
+        }
+    }
+}

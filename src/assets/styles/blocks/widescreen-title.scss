@@ -1,0 +1,248 @@
+.widescreen {
+    &__title {
+        background: #282828;
+
+        & .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        & .line {
+            height: 100%;
+            width: 2px;
+            border: 1px solid #FFFFFF;
+            margin: 0 0 0 68px;
+
+            @media screen and (max-width: 550px) {
+                height: 70px;
+                margin-left: 16px;
+            }
+        }
+
+        & .title {
+            font-size: 3.125rem;
+            line-height: 52px;
+            padding: 28px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+                line-height: 2.7rem;
+                padding: 20px;
+            }
+
+            @media screen and (max-width: 550px) {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                padding: 20px;
+            }
+        }
+
+        & .description {
+            font-size: 1.25rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+
+            }
+
+            @media screen and (max-width: 550px) {
+                font-size: 0.875rem;
+
+            }
+        }
+    }
+
+    &__banners {
+        & .container {
+            padding: 50px 56px;
+
+            @media (max-width: 768px) {
+                padding: 16px 14px;
+
+            }
+        }
+    }
+
+    &__request {
+        background: #606060;
+
+        & .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &__btn {
+            padding: 10px 38px;
+        }
+    }
+
+    &__slider {
+        background: #282828;
+
+        & .container {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+    }
+}
+
+.banners {
+
+    &__list {
+        row-gap: 20px;
+
+        @media (max-width: 768px) {
+            row-gap: 15px;
+        }
+
+        @media (max-width: 550px) {
+            row-gap: 7px;
+        }
+    }
+
+    &__item {
+
+        & .row {
+            padding: 0 10px !important;
+        }
+
+        & .banner__image {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 10;
+                transition: all 0.3s;
+            }
+        }
+
+        &:hover {
+            & .banner__image {
+                &::after {
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+                    background: rgba(0, 0, 0, 0.3);
+                }
+
+            }
+        }
+    }
+}
+
+.banner {
+
+    &__title {
+        font-size: 2.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__price {
+        font-size: 1.25rem;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.request {
+
+    &__btn {
+        font-size: 0.68rem;
+        padding: 10px 38px;
+
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: 0 32px;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 0.875rem;
+        }
+    }
+}
+
+.slider {
+
+    &__content {
+
+        & .swiper-slide {
+
+            @media screen and (max-width: 768px) {
+                height: calc(calc(100% - 30px)/2);
+            }
+
+            @media screen and (max-width: 768px) {
+                height: calc(calc(100% - 7px)/2);
+            }
+        }
+    }
+
+    &__title {
+        color: #6D6D6D;
+        font-size: 4.5rem;
+        line-height: 80px;
+
+        @media screen and (max-width:768px) {
+            font-size: 4rem;
+            line-height: 65px;
+        }
+    }
+
+    &__button {
+        & span {
+            color: #C7C7C7;
+            font-size: 0.875rem;
+        }
+
+        &:hover {
+            & span {
+                color: #6D6D6D;
+            }
+        }
+
+    }
+
+    &__control {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.servicesSwiper {
+
+    @media screen and (max-width: 768px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 350px;
+    }
+
+}

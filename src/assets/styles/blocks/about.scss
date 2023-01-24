@@ -1,0 +1,45 @@
+.about {
+    background: #323232;
+
+    & .container {
+        padding: 60px 70px 80px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 2rem;
+
+        &-container {
+            width: 75%;
+
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
+
+        &-line {
+            border: 1px solid $ButtonColor;
+            width: 165px;
+            height: 3px;
+            background: $ButtonColor;
+        }
+    }
+
+    &__list {
+        row-gap: 20px;
+    }
+
+    &__item {
+        width: 170px;
+
+        &-img {
+            width: 60px;
+            height: 60px;
+            background: #FFFFFF;
+        }
+
+        &-text {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.promo {
+    background-image: url("../images/promo_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 460px;
+
+    @media (max-width: 768px) {
+        height: 475px;
+    }
+
+    &__background {
+        background: rgba($color: #000000, $alpha: 0.86);
+        backdrop-filter: blur(6px);
+    }
+
+    &__container {
+        max-width: 1300px !important;
+    }
+
+    &__title {
+        color: #FFFFFF;
+        font-size: 120px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #FFFFFF;
+        font-weight: 900;
+        line-height: 80px;
+
+        @media (max-width: 1200px) {
+            font-size: 5rem;
+            line-height: 65px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 3.75rem;
+            line-height: 45px;
+        }
+
+        &-line {
+            border: 1px solid #FFFFFF;
+            margin-top: 20px;
+            width: 100%;
+
+            @media (max-width: 1200px) {
+                width: 75%;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__description {
+        padding-left: 70px;
+
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+
+        &-title {
+            color: #FFFFFF;
+            font-size: 2.375rem;
+
+            @media (max-width: 1200px) {
+                font-size: 1.875rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1.125rem;
+                color: $ButtonColor;
+            }
+        }
+
+        &-item {
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-size: 1.25rem;
+            line-height: 21px;
+
+            @media (max-width: 1200px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.875rem;
+            }
+        }
+
+        &-control {
+            margin-top: 20px;
+        }
+
+        &-btn {
+            color: #FFFFFF;
+            font-size: 0.68rem;
+            min-width: 195px;
+            background: $ButtonColor;
+
+            &:hover {
+                background: darken($ButtonColor, 5%);
+            }
+
+            @media (max-width: 768px) {
+                text-transform: uppercase;
+                letter-spacing: 0.12rem;
+            }
+        }
+    }
+}
