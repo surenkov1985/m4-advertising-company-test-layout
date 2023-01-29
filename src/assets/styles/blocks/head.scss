@@ -3,8 +3,8 @@
         background: $ButtonColor;
 
         & .container {
-            padding-top: 12px;
-            padding-bottom: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
 
         &-btn {
@@ -68,7 +68,7 @@
         }
 
         &-list {
-            column-gap: 12px;
+            column-gap: 30px;
             row-gap: 30px;
 
             @media (max-width: 768px) {
@@ -107,6 +107,7 @@
             &:hover {
                 text-decoration: none;
                 color: #FFFFFF;
+                font-weight: 700;
 
                 &::after {
                     width: 100%;

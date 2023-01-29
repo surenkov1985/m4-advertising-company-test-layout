@@ -24,6 +24,7 @@ html {
 }
 
 * {
+    font-family: 'Roboto'sans-serif;
     box-sizing: border-box;
     transition: all 0.3s;
 }
@@ -44,7 +45,7 @@ ol {
 
 .container {
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 49px;
 
     @media (max-width: 768px) {
         padding: 0 14px;

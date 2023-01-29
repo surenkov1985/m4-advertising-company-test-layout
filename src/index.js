@@ -22,8 +22,6 @@ $(".questions__form").on("submit", function (e) {
 $(".link").each((_, link) => {
 	$(link).removeClass("active");
 
-	console.log($(link), location.pathname.split("/")[1] === $(link)[0].pathname.split("/")[1]);
-
 	if (location.pathname.split("/")[1] === $(link)[0].pathname.split("/")[1]) {
 		$(link).addClass("active");
 	}
