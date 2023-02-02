@@ -296,10 +296,38 @@
             padding-left: 8px;
             padding-right: 8px;
         }
+
+        & svg {
+            @media (max-width: 768px) {
+                width: 150px;
+                height: 180px;
+            }
+
+            @media (max-width: 550px) {
+                width: 116px;
+                height: 152px;
+            }
+        }
     }
 
     &__control {
         margin-top: 12px;
+
+        &-text {
+            font-size: 1.125rem;
+            color: #7A7A7A;
+            margin-left: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            @media (max-width: 550px) {
+                font-size: 0.875rem;
+            }
+        }
     }
 
     &__btn {

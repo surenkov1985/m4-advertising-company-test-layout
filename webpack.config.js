@@ -34,8 +34,24 @@ const build = {
 			template: "services/interior-printing.html",
 		}),
 		new HtmlWebpackPlugin({
+			filename: "services/interior-signs.html",
+			template: "services/interior-signs.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services/flexible-neon.html",
+			template: "services/flexible-neon.html",
+		}),
+		new HtmlWebpackPlugin({
 			filename: "services/signboards.html",
 			template: "services/signboards.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services/bussiness-cards.html",
+			template: "services/bussiness-cards.html",
+		}),
+		new HtmlWebpackPlugin({
+			filename: "services/flyers.html",
+			template: "services/flyers.html",
 		}),
 		new HtmlWebpackPlugin({
 			filename: "portfolio.html",

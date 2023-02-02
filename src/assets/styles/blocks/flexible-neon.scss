@@ -1,0 +1,110 @@
+.neon {
+    & .causes {
+        &__item {
+
+            @media (max-width: 991px) {
+                border-top: 1px solid #F5F5F5;
+                padding-top: 16px;
+            }
+
+            &-num {
+                background: linear-gradient(216.23deg, #B4B4B4 3.13%, #FFFFFF 100.64%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                line-height: 105px;
+
+                @media (max-width: 768px) {
+                    line-height: 90px;
+                }
+
+                @media (max-width: 550px) {
+                    line-height: 75px;
+                }
+            }
+
+            &-title {
+                font-size: 40px;
+                line-height: 64px;
+                font-weight: 900;
+                color: #797979;
+
+                @media (max-width: 768px) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: 550px) {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+
+            &-desc {
+                font-size: 18px;
+                line-height: 32px;
+                color: #373737;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+
+                @media (max-width: 550px) {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    & .signboards__description-text-list {
+        row-gap: 20px;
+    }
+
+    & .widescreen__slider {
+        background: #FFFFFF;
+    }
+
+    & .terms {
+        background: #414141;
+
+        &__icon {
+            width: 274px;
+            height: 274px;
+            background: #373737;
+
+            &-text {
+                font-weight: 600;
+                font-size: 90px;
+                line-height: 45px;
+                color: #6d6d6d;
+
+                @media (max-width: 768px) {
+                    font-weight: 500;
+                    font-size: 85px;
+                    line-height: 47px;
+                }
+
+                @media (max-width: 550px) {
+                    font-size: 80px;
+                    line-height: 49px;
+                }
+
+                & small {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        &__btn {
+            background: none;
+            border: 1px solid #FFFFFF;
+
+            &:hover {
+                border-color: $ButtonColor;
+                background: $ButtonColor;
+            }
+        }
+    }
+}
